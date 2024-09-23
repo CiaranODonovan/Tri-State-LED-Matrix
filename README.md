@@ -49,12 +49,7 @@ for the purpose of creating offsets for the X Y positions of any abstract data s
 Abstract shapes could also be represented as memory efficient arrays in uint8_t (E.G the letter 'A' as : 
 
 
-      13,14, 
-   22,      25, 
-31,            36, 
-41,42,43,44,45,46, 
-51,            56, 
-61,            66 
+![letter_A](https://github.com/user-attachments/assets/376e0713-6c25-41b2-a7db-02b4f3651205)
 
 
 equates to 16 bytes in program memory compared to an int format of 64 bytes)

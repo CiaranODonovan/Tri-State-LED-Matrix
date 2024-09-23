@@ -9,11 +9,11 @@ This was a project I undertook at the end of my first year of studying software 
 
 At this point in time I possessed very few components, and wanted to challenge myself to make something with what I had which included:
 
--An Arduino nano
--A breadboard
--An assortment of Mono colored LEDs
--A resistor assortment
--Jumper wires
+- An Arduino nano
+- A breadboard
+- An assortment of Mono colored LEDs
+- A resistor assortment
+- Jumper wires
 - A digital multimeter
 
 

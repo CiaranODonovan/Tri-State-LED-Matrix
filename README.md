@@ -48,7 +48,6 @@ for the purpose of creating offsets for the X Y positions of any abstract data s
 
 Abstract shapes could also be represented as memory efficient arrays in uint8_t (E.G the letter 'A' as : 
 
-const uint8_t letterA[] PROGMEM = {
 
       13,14, 
    22,      25, 
@@ -57,7 +56,6 @@ const uint8_t letterA[] PROGMEM = {
 51,            56, 
 61,            66 
 
-};
 
 equates to 16 bytes in program memory compared to an int format of 64 bytes)
 

@@ -25,8 +25,11 @@ The nano can only tolerate 200mA load safely, and a maximum of 20mA per GPIO pin
 
 Instead I used a technique known as "Charlieplexing", a specific form of tri state multiplexing that utilizes the uni-directional property of diodes, and microprocessor's Input, Output and high impedance pin states to create individual logical addressing to LEDs as the specific anode & cathode layout can allow circuits to be created as permutations rather than combinations.
 
+![RegularCharlieplexedArray2](https://github.com/user-attachments/assets/be31fe1a-265e-4404-adee-c3f05e66e425)
+
 
 This greatly reduces the number of IO ports needed, at the cost of a lower duty cycle scaling inversely with the number of LEDS. the total number of LEDs (N) that can be driven by a specific number of IO pins (P) can be formally expressed as N = P*(P-1). 
+
 
 Given 14 pins, the maximum numbers of LEDS I could drive would be 14*(14-1) = 182, however the only mount I had was a relatively small breadboard and the duty cycle would be very low, so instead I used 7 pins to drive a 6x6 total of 36 LEDS matrix which fit the breadboard. 
 

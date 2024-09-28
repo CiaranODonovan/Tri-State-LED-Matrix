@@ -1,4 +1,9 @@
 # Tri-State-LED-Matrix
+EDIT 28/09/24 :
+After compiling and reviewing this old project with another year of experience, I decided to optimize it a bit further where I saw glaring issues that could be fixed quickly. The shapes now use 5 bytes using bitpacking for 36 pixel bits, and using the remaining bits in the fifth byte to encode width values. letter 'A' example down from 17 bytes (including width) to 5. Drivers are optimized with a lookup table and composite key values for anodes/cathodes. Refresh rate flicker is now invisible. Sketch size down to 1.8 kb.  ˜ 1.85 kb out of 2k ram left for string literals.
+
+
+
 This was a project I undertook at the end of my first year of studying software development. It is a Tri State logic 6x6 LED matrix. After being acquainted with the Arduino platform and fundamental physical computing concepts I wanted to undertake a hands on project with minimal components from scratch to get a better understanding of IO driving, electronics and C based programming.
 
 

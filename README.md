@@ -1,6 +1,7 @@
 # Tri-State-LED-Matrix
 EDIT 28/09/24 :
-After compiling and reviewing this old project with another year of experience, I decided to optimize it a bit further where I saw glaring issues that could be fixed quickly. The shapes now use 5 bytes using bitpacking for 36 pixel bits, and using the remaining bits in the fifth byte to encode width values. letter 'A' example down from 17 bytes (including width) to 5. Drivers are optimized with a lookup table and composite key values for anodes/cathodes. Refresh rate flicker is now invisible. Sketch size down to 1.8 kb.  ˜ 1.85 kb out of 2k ram left for string literals.
+After compiling and reviewing this old project with another year of experience, I decided to optimize it a bit further where I saw glaring issues that could be fixed quickly. The shapes now use 5 bytes using bitpacking for 36 pixel bits, and using the remaining bits in the fifth byte to encode width values. letter 'A' example down from 17 bytes (including width) to 5. Drivers are optimized with a lookup table and composite key values for anodes/cathodes. Refresh rate flicker is now invisible. Sketch size down to 1.8 kb / 30.7kb leaving plenty of room for future updates.  ˜ 1.85 kb out of 2kb ram left for string literals.
+Updated code in LEDM-Code-V2
 
 
 
